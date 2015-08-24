@@ -1,0 +1,48 @@
+git status
+git commit -a
+git add -a
+git status
+git commit -a
+git add -a
+git config remote.origin.url https://pmielke@github.com/pmielke/emacs-config.git
+git config remote.origin.url https://pmielke@github.com/pmielke/test.git
+git pull
+git config remote.origin.url
+git add -A
+git commit -m "message"
+git add -A;git commit -m "message";git push master
+git push
+git add -A;git commit -m "message";git -q push
+git help push
+git add -A;git commit -m "message";git push  -q
+echo "some more content" >> README.md; git add -A;git commit -m "message";git push  -q
+git log
+git log | grep commit
+git log | grep ^commit
+git log | grep ^commit | wc -l
+echo "some more content" >> README.md; git add -A;git commit -m "message $(git log | grep ^commit | wc -l)";git push  -q
+eval "1+$(git log | grep ^commit | wc -l)"
+expr "1 + $(git log | grep ^commit | wc -l)"
+expr 1 + $(git log | grep ^commit | wc -l)
+echo "some more content" >> README.md; git add -A;git commit -m "message $(expr 1 + $(git log | grep ^commit | wc -l))";git push  -q
+git config remote.origin.url https://pmielke@github.com/pmielke/emacs-config.git
+git config remote.origin.url https://pmielke@github.com/pmielke/test.git
+git pull
+git config remote.origin.url
+git add -A
+git commit -m "message"
+git add -A;git commit -m "message";git push master
+git push
+git add -A;git commit -m "message";git -q push
+git help push
+git add -A;git commit -m "message";git push  -q
+echo "some more content" >> README.md; git add -A;git commit -m "message";git push  -q
+git log
+git log | grep commit
+git log | grep ^commit
+git log | grep ^commit | wc -l
+echo "some more content" >> README.md; git add -A;git commit -m "message $(git log | grep ^commit | wc -l)";git push  -q
+eval "1+$(git log | grep ^commit | wc -l)"
+expr "1 + $(git log | grep ^commit | wc -l)"
+expr 1 + $(git log | grep ^commit | wc -l)
+echo "some more content" >> README.md; git add -A;git commit -m "message $(expr 1 + $(git log | grep ^commit | wc -l))";git push  -q
