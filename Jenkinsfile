@@ -7,6 +7,19 @@ pipeline {
                 sh 'env'
             }
         }
+
+        stage('Sanity check') {
+            steps {
+                input "Check staging environment. Proceed?"
+            }
+        }
+        
+        stage('failure') {
+            steps {
+                sh '''exit 1
+                '''
+            }
+        }
     }
 
 /* comments? */
