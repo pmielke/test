@@ -10,7 +10,7 @@ pipeline {
 
         stage('Sanity check') {
             steps {
-                input "Check staging environment. Proceed?"
+                sh 'whereami.sh'
             }
         }
         
