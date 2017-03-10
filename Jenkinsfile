@@ -16,7 +16,7 @@ pipeline {
         
         stage('failure') {
             steps {
-                sh '''exit 1
+                sh '''echo hi;exit 0
                 '''
             }
         }
