@@ -2,6 +2,8 @@
 #
 # whereami - <summary of what this does>
 
-echo pwd
+echo whereami script
+echo $PATH
+pwd
 ls -al
 whoami
