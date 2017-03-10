@@ -10,7 +10,7 @@ pipeline {
 
         stage('Sanity check') {
             steps {
-                sh 'whereami.sh'
+                sh './whereami.sh'
             }
         }
         
